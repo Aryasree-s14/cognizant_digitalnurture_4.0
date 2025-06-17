@@ -6,7 +6,7 @@ public class Logger {
 	
 	private Logger()
 	{
-		System.out.println("Inilitialized");
+		System.out.println("Initialized");
 	}
 	
 	public static Logger getInstance()
