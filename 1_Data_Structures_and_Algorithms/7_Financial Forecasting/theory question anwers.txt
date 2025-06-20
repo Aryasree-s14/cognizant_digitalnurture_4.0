@@ -1,0 +1,26 @@
+1. Understand Recursive Algorithms:
+
+--Recursion is a programming technique where a function calls itself to solve smaller instances of a problem. The process continues until a base case is reached, which stops the recursion.
+Recursion is particularly useful for breaking down complex problems into manageable subproblems. Some common examples where recursion is applied include:
+i. Calculating the Fibonacci series
+ii. Finding the factorial of a number
+iii. Performing financial forecasting 
+
+4.Analysis:
+
+-- Assuming the recursive algorithm runs for n steps:
+
+Recursive depth = Number of Recursive calls = n
+
+Each recursive call performs a constant time operation 
+Therefore,
+Time Complexity: O(n)
+Space Complexity: O(n) 
+
+-- We can optimize it using:
+
+I. Memoization: It stores the results of previous computations to avoid redundant calculations thus improving performance in overlapping subproblems.
+
+II. Using Loops: For simple cases we can use loops instead of recursion.
+
+

@@ -1,0 +1,27 @@
+1.Understand asymptotic notation:
+   
+-- Big O notation is used to describe the time and space complexity of an algorithm depending on the input size n. It helps us understand how the performance of an algorithm scales with increasing input.
+
+-- Linear Search time complexity:
+   
+Best case: O(1) when element is found at the beginning.
+
+Average case: O(n)
+
+Worst case: O(n) when element is at the end or not present 
+
+-- Binary Search Complexity
+
+Best case: O(1) when element is found at the middle
+
+Average Case: O(log n)
+
+Worst Case: O(log n)
+
+4.Analysis:
+
+-- Time Complexity: Binary Search is more efficient than Linear Search as O(log n) < O(n). This makes Binary Search faster especially with large datasets.
+
+-- In real-world scenarios like E-commerce platforms, where datasets are large and search operations are frequent, Binary Search is preferred due to its better performance. As long as the product data is sorted, Binary Search ensures fast and efficient search, making it highly suitable for such platforms where speed and scalability are crucial.
+
+
