@@ -1,0 +1,24 @@
+1.Explain different sorting algorithms (Bubble Sort, Insertion Sort, Quick Sort, Merge Sort).
+
+--Bubble Sort is one of the simplest sorting algorithms. It works by repeatedly stepping through the list, comparing each pair of adjacent elements, and swapping them if they are in the wrong order. Over multiple passes, the largest unsorted element moves to its correct position. Although easy to understand and implement, Bubble Sort is highly inefficient for large datasets due to its quadratic time complexity of O(n²), making it impractical for sorting large numbers of records.
+
+Insertion Sort mimics the way people often sort playing cards. It builds a sorted section of the list one element at a time by picking the next item and inserting it into its correct position among the already sorted items. This algorithm is efficient for small datasets or nearly sorted data, but like Bubble Sort, it has a time complexity of O(n²) in the average and worst cases, which limits its use in critical applications.
+
+Merge Sort takes a more advanced approach known as divide and conquer. It breaks the list into halves recursively until each sublist contains a single element. It then merges those sublists back together in a sorted manner. Merge Sort is much more efficient on large datasets, with a time complexity of O(n log n) in all cases. It’s highly reliable and stable but uses additional memory.
+
+Quick Sort is another divide-and-conquer algorithm. It selects a pivot element, partitions the list into two sublists, elements less than the pivot and greater than the pivot and recursively applies the same strategy to the sublists. Quick Sort is usually the fastest of the common sorting algorithms, with an average-case time complexity of O(n log n). Although its worst-case performance is O(n²).
+
+4.a.Compare the performance (time complexity) of Bubble Sort and Quick Sort.
+
+-- Bubble Sort’s O(n²) time complexity means that as the number of items grows, the number of operations grows quadratically. This rapid growth makes Bubble Sort inefficient and impractical for any significant volume of data.
+
+In contrast, Quick Sort offers an average-case time complexity of O(n log n), which makes it far more suitable for large datasets. The number of operations grows much more slowly as the dataset grows, allowing Quick Sort to handle thousand of items with ease. Although Quick Sort can degrade to O(n²) in the worst-case scenario, this is uncommon in practice.
+
+4.b.Discuss why Quick Sort is generally preferred over Bubble Sort.
+
+-- Quick Sort is generally preferred over Bubble Sort in real-world applications due to its efficiency, speed, and scalability. Its average-case performance of O(n log n) makes it ideal for large and complex datasets, such as sorting customer orders in an e-commerce system or transaction records in a financial application. Quick Sort also operates in-place, requiring minimal additional memory, which makes it both time and space efficient.
+
+On the other hand, Bubble Sort is rarely used outside of educational contexts. Its poor performance on large datasets renders it unsuitable for most practical purposes. It lacks the efficiency needed for production-level systems.
+
+
+

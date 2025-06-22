@@ -1,0 +1,24 @@
+1.a. Explain why data structures and algorithms are essential in handling large inventories.
+
+--In systems that handle large inventories, the efficiency of operations like searching, adding, updating, and deleting items is critical. With thousands or even millions of products, poor operations can lead to slow response times, reduced system performance, and a poor user experience. Here, data structures and algorithms play a vital role. By selecting the right data structure and applying efficient algorithms, we can significantly improve the speed and scalability of inventory operations.
+
+1.b.Discuss the types of data structures suitable for this problem.
+
+-- Two common data structures are suitable here:
+
+ArrayList: A list that stores products in order. It's easy to use but can be slow for searching because you might have to check every item.
+
+HashMap: A structure that stores products using a unique key. It is extremely fast for finding a specific product by its ID.
+
+4.a. Analyze the time complexity of each operation (add, update, delete) in your chosen data structure.
+
+-- we used a HashMap here so:
+i. Adding a new product takes O(1) as the HashMap directly calculates where to store it.
+
+ii. Update: Finding a product by its ID and updating also takes O(1).
+
+iii.Deleting a product using its ID also takes O(1).
+
+4.b. Discuss how you can optimize these operations.
+
+--The key optimization is selecting the right data structure. Using a HashMap when items are uniquely identified and  frequently needs to be searched, updated, or deleted.This ensures that all major operations remain fast and scalable, even with a large inventory.

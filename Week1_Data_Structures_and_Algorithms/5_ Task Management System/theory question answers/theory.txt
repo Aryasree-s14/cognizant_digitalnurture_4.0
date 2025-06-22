@@ -1,0 +1,24 @@
+1.Explain the different types of linked lists (Singly Linked List, Doubly Linked List).
+
+--A linked list is a linear data structure where nodes are connected through pointers, rather than being stored in contiguous memory like arrays. There are two primary types of linked lists:
+
+A Singly Linked List is a one-way structure in which each node contains two parts: the data and the pointer to the next node in the sequence. This allows for traversal in only one direction which is from the head to the end of the list.
+
+A Doubly Linked List, in contrast, allows for two-way traversal. Each node contains three parts: the data, a pointer to the next node, and a pointer to the previous node. This bidirectional navigation makes certain operations more efficient.
+
+4.a.Analyze the time complexity of each operation
+
+--Add: Inserting a node at the beginning of the list takes O(1), since it involves updating just one pointer. However, adding a node to the end requires traversal from the head to the last node, resulting in O(n) time complexity.
+
+Search: To locate a specific node, we must start at the head and sequentially check each node until the target is found. This is a linear operation with a time complexity of O(n).
+
+Traverse: Traversing the entire list, such as for printing or processing all tasks, also takes O(n) time, as each node must be visited one at a time.
+
+Delete: Deletion involves two steps, first, locating the node to delete (O(n)), and then updating the pointer of the preceding node to skip the deleted one. Thus, the overall time complexity is O(n).
+
+4.b.Discuss the advantages of linked lists over arrays for dynamic data.
+
+-- Two advantages are:
+Dynamic Size: Unlike arrays, linked lists are not restricted to a fixed size. They can grow or shrink as needed, without the overhead of resizing. Arrays require the creation of a new array and copying of data when their capacity is exceeded, which takes O(n) time.
+
+Efficient Insertions and Deletions: Inserting or deleting nodes in a linked list is more efficient than in arrays. Once the correct position is located, the operation requires only a few pointer updates, which can be performed in O(1) time. Arrays, on the other hand, require shifting of elements to maintain order, making the same operations O(n).

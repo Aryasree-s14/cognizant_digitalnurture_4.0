@@ -1,0 +1,19 @@
+1.Explain how arrays are represented in memory and their advantages
+
+-- Arrays are represented in memory as a contiguous block of storage. Each element in the array is placed directly next to the previous one, forming a continuous sequence. This allows for highly efficient access to elements. Since the system knows the starting memory address of the array and the size of each element, it can compute the address of any element using its index.This direct addressing makes accessing elements by index an O(1) operation, which is one of the key advantages of using arrays.
+
+4.a.Analyze the time complexity of each operation (add, search, traverse, delete).
+
+-- Add: Adding an element to the end of an array takes O(1). However, if the array is full and must be resized, the operation becomes O(n) due to the need to allocate a new array and copy existing elements.
+
+Search: for searching for a specific item when the array isn’t sorted or indexed, we need to perform a linear search, examining each element one by one. This results in a time complexity of O(n) in the worst case.
+
+Traverse: Traversing an array means visiting each element in sequence, which is a straightforward operation with a time complexity of O(n), as every element is accessed once.
+
+Delete: Deletion in an array requires finding the target element first, which takes O(n) and then shifting all subsequent elements one position to the left to fill the gap. This shifting also takes O(n) time, making the overall deletion complexity O(n).
+
+4.b.Discuss the limitations of arrays and when to use them.
+
+--The biggest limitation of arrays is their fixed size. Once an array is created, its capacity can't be changed. If we need more space, we have to create a new, larger array and copy everything over, which is inefficient. Another limitation is the high cost of insertion and deletion because it requires shifting many elements.
+Arrays are best used when we have a collection of items whose size is known and doesn't change frequently, and when the primary need is to access elements quickly by their index.
+
