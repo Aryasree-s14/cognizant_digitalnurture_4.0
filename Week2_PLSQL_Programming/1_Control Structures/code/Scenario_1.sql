@@ -12,7 +12,7 @@ BEGIN
         DBMS_OUTPUT.PUT_LINE('Customer ID: ' || v_customer_id || ', DOB: ' || TO_CHAR(v_dob, 'YYYY-MM-DD') || ', Age: ' || v_age);
 
         IF v_age > 60 THEN
-            -- Apply 1% discount to their loans
+            
             UPDATE Loans
             SET InterestRate = InterestRate - 1
             WHERE CustomerID = v_customer_id;
