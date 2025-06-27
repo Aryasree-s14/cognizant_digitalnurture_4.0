@@ -61,7 +61,7 @@ class maintest {
     @Test
     @DisplayName("Test for divide method: regular division")
     void testDivide() {
-        assertEquals(2.5, calculator.divide(5, 2), 0.001, "5 / 2 should be 2.5"); // Third argument for double delta
+        assertEquals(2.5, calculator.divide(5, 2), 0.001, "5 / 2 should be 2.5"); 
     }
 
     @Test
