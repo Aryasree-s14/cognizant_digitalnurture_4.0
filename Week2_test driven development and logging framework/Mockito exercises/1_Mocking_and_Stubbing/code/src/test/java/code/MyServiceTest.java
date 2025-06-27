@@ -38,7 +38,7 @@ public class MyServiceTest {
 
  @Test
  public void testProcessAndSendData() {
-     // ARRANGE:
+     
      String inputData = "hello";
      String expectedProcessedData = "Processed: HELLO";
      String expectedConfirmation = "Data sent successfully!";
