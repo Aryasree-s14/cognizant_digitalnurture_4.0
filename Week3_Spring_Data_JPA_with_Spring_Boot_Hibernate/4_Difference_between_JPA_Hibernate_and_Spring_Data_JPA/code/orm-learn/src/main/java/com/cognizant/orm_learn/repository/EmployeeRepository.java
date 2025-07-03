@@ -6,6 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
-    // Spring Data JPA will automatically implement CRUD methods.
-    // You can add custom query methods here if needed.
+    
 }

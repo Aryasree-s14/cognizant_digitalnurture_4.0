@@ -14,7 +14,7 @@ public class Employee {
     private String lastName;
     private double salary;
 
-    // Constructors
+    
     public Employee() {
     }
 
@@ -24,7 +24,7 @@ public class Employee {
         this.salary = salary;
     }
 
-    // Getters and Setters
+   
     public Integer getId() {
         return id;
     }

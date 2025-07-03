@@ -33,7 +33,7 @@ public class Country {
         this.name = name;
     }
 
-    // toString() method
+    
     @Override
     public String toString() {
         return "Country [code=" + code + ", name=" + name + "]";
