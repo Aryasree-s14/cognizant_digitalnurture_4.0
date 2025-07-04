@@ -15,7 +15,7 @@ public class EmployeeService {
 
     @Transactional
     public Employee addEmployee(Employee employee) {
-        // The save method is provided by JpaRepository
+        
         return employeeRepository.save(employee);
     }
 }
